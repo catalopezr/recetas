@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "titulo": "Recetario digital",
+    "subtitulo": "Cookies y cakes — Ecole / Las Claves de la Pastelería",
+    "descripcion": "Transcripción depurada fiel al material impreso y a las anotaciones manuscritas.",
+    "escuela": "Ecole",
+    "curso": "Las Claves de la Pastelería",
+    "chef": "Fernanda Pérez",
+    "clases": [
+      { "nombre": "Cookies", "dia": "6 de julio de 2026" },
+      { "nombre": "Cakes", "dia": "7 de julio de 2026" }
+    ],
+    "criterio": [
+      "El texto impreso se conserva como base. Cuando una anotación de clase fue confirmada como corrección o ajuste, se incorpora de forma explícita y queda señalada en las notas.",
+      "Las anotaciones a mano se separan en una sección propia dentro de cada receta.",
+      "Las recetas manuscritas ubicadas en la parte superior se presentan como recetas alternativas después de la receta principal correspondiente.",
+      "Las lecturas todavía inciertas se identifican como [Lectura dudosa], [Lectura probable] o [Ilegible], sin completar el contenido por suposición."
+    ]
+  },
+  "recetas": [
+    {
+      "slug": "galletas-rellenas-limon",
+      "titulo": "Galletas rellenas de mermelada y curd de limón",
+      "resumen": "Galleta sablée estilo «quebrada» rellena de curd y mermelada de limón, terminada con un glaseado brillante. Cuatro elaboraciones que se montan en orden.",
+      "categoria": "Galletas",
+      "clase": "Cookies",
+      "dia": "6 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/galletas-rellenas-limon.jpg",
+      "fuente": "Páginas 1 a 4 del PDF escaneado.",
+      "componentes": [
+        {
+          "titulo": "Masa sablée para galleta de limón",
+          "fuente": "Página 1 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Mantequilla", "cantidad": "75 g" },
+            { "item": "Azúcar flor", "cantidad": "28 g" },
+            { "item": "Yema de huevo rayada (huevo duro)", "cantidad": "3 g" },
+            { "item": "Harina", "cantidad": "75 g" },
+            { "item": "Chuño", "cantidad": "15 g" },
+            { "item": "Zeste de limón", "cantidad": "1/2 u" }
+          ],
+          "procedimiento": [
+            "Hervir un huevo desde agua fría, 11 minutos desde que comienza a hervir. Enfriar y separar la yema cocida. Pasar por un tamiz fino.",
+            "Pomar la mantequilla, añadir el azúcar flor, la yema rayada y el zeste de limón.",
+            "Incorporar la harina con el chuño en 3 tandas a la mezcla anterior con ayuda de un mezquino.",
+            "Extender la masa entre hojas guitarra, papel mantequilla o siliconas. 3 mm de espesor, congelar 1 hora para luego cortar con corta pastas Aro 3,5 cm.",
+            "Congelarlas nuevamente antes de hornear.",
+            "160 °C 8 – 10 minutos (ventilación 2 – tiro abierto)."
+          ],
+          "notas": [
+            "Junto al nombre: galleta estilo «quebrada».",
+            "Junto al paso 2: pomar significa «ablandar con el azúcar».",
+            "Tip: utilizar «uslero con medidas» para los 3 mm y «silicona microperforada»."
+          ]
+        },
+        {
+          "titulo": "Crema al limón (demo) / Curd",
+          "fuente": "Página 2 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Huevo entero", "cantidad": "50 g" },
+            { "item": "Azúcar", "cantidad": "50 g" },
+            { "item": "Zeste limón", "cantidad": "1/2 u" },
+            { "item": "Jugo limón", "cantidad": "25 g" },
+            { "item": "Maicena", "cantidad": "3 g" },
+            { "item": "Mantequilla", "cantidad": "35 g" }
+          ],
+          "procedimiento": [
+            "Juntar huevo con la maicena de a poco para que no se hagan grumos.",
+            "Añadir esta mezcla tamizada a la olla, luego añadir azúcar, jugo de limón y zeste de limón a la mezcla; hervir hasta obtener una textura de crema.",
+            "Añadir la mantequilla cortada en cubos, mezclar y luego triturar con la minipimer para emulsionar.",
+            "Llevar a una bandeja o recipiente largo para estirar la mezcla, tapar con film a contacto y refrigerar hasta que se enfríe: 12 horas.",
+            "Una vez fría, alisar la mezcla batiendo nuevamente en la batidora con la ayuda del globo.",
+            "Disponer en manga con boquilla 16 — 10 g por galleta."
+          ],
+          "notas": [
+            "«Dura 4-5 días».",
+            "Composición de un huevo: «Yemas = 20 g / Claras = 30 g»."
+          ]
+        },
+        {
+          "titulo": "Mermelada de limón (demo)",
+          "fuente": "Página 3 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Jugo limón", "cantidad": "75 g" },
+            { "item": "Azúcar", "cantidad": "38 g" },
+            { "item": "Pectina jaune (manzana — amarilla)", "cantidad": "1,5 g" }
+          ],
+          "procedimiento": [
+            "Calentar jugo a 40 °C. (Para que no haga grumos).",
+            "Añadir el azúcar mezclada previamente con la pectina.",
+            "Cocinar hasta llegar a los 106 °C.",
+            "Extender en bandeja o recipiente para enfriar en refrigeración, cubrir con film a contacto.",
+            "Disponer 5 g por galleta."
+          ],
+          "notas": [
+            "Junto al calentamiento: «para que no haga grumos».",
+            "Pectina es un «gelificante».",
+            "Otras marcas de pectina: «Sosa», «Gourmet Select»."
+          ]
+        },
+        {
+          "titulo": "Glaseado de limón",
+          "fuente": "Página 4 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Jugo limón", "cantidad": "18 g" },
+            { "item": "Azúcar glas", "cantidad": "75 g" }
+          ],
+          "procedimiento": [
+            "Mezclar ambos ingredientes hasta que sea homogéneo.",
+            "Una vez que las galletas estén listas, glasear y luego secar en el horno a 155 °C por 40 segundos."
+          ],
+          "notas": []
+        }
+      ],
+      "alternativas": [
+        {
+          "titulo": "Masa sablée para tartas",
+          "descripcion": "Receta alternativa manuscrita ubicada en la parte superior de la página.",
+          "ingredientes": [
+            { "item": "Harina floja", "cantidad": "260 g" },
+            { "item": "Huevo", "cantidad": "50 g" },
+            { "item": "Mantequilla", "cantidad": "120 g" },
+            { "item": "Azúcar flor", "cantidad": "90 g" }
+          ],
+          "procedimiento": [
+            "Mismo paso a paso de la masa sablée anterior, pero añadir el huevo al final, cuando hayan desaparecido los grumos de mantequilla en el arenado."
+          ],
+          "notas": []
+        }
+      ]
+    },
+    {
+      "slug": "galletas-mangueadas",
+      "titulo": "Galletas mangueadas",
+      "resumen": "Masa cremosa con harina de almendra que se manguea con boquilla rizada y se termina con chocolate y almendra picada.",
+      "categoria": "Galletas",
+      "clase": "Cookies",
+      "dia": "6 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/galletas-mangueadas.jpg",
+      "fuente": "Página 5 del PDF escaneado.",
+      "componentes": [
+        {
+          "titulo": "Galleta mangueada",
+          "fuente": "Página 5 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Mantequilla", "cantidad": "80 g" },
+            { "item": "Azúcar flor", "cantidad": "38 g" },
+            { "item": "Leche", "cantidad": "35 g" },
+            { "item": "Harina", "cantidad": "100 g" },
+            { "item": "Harina de almendra", "cantidad": "20 g" },
+            { "item": "Sal", "cantidad": "1 g" },
+            { "item": "Chocolate amargo", "cantidad": "300 g" }
+          ],
+          "procedimiento": [
+            "Pomar la mantequilla con la pala, añadir el azúcar flor hasta tener una textura lisa y cremosa.",
+            "Añadir de a poco la leche, en 3 tandas para que se incorpore correctamente a la mezcla.",
+            "Tamizar los secos y añadir en 2 tandas a la mezcla.",
+            "Poner la mezcla en una manga con boquilla rizada.",
+            "Manguear galletas en una silicona microperforada, llevar a congelar por 10 minutos.",
+            "Horno 160 °C por 20 minutos.",
+            "Decorar mitad de galleta con chocolate y almendra picada fina."
+          ],
+          "notas": [
+            "Corrección de clase: a los 20 g de leche impresos se suman 15 g adicionales. Cantidad total de leche: 35 g."
+          ]
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "cookie-mani-caramelo",
+      "titulo": "Cookies de maní con caramelo",
+      "resumen": "Cookie de mantequilla de maní con frosting de caramelo seco y cabritas. Tres elaboraciones: la cookie, el caramelo y la decoración.",
+      "categoria": "Cookies",
+      "clase": "Cookies",
+      "dia": "6 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/cookie-mani-caramelo.jpg",
+      "fuente": "Páginas 6 a 8 del PDF escaneado.",
+      "componentes": [
+        {
+          "titulo": "Cookie de maní",
+          "fuente": "Página 6 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Mantequilla", "cantidad": "46 g" },
+            { "item": "Azúcar", "cantidad": "41 g" },
+            { "item": "Azúcar morena", "cantidad": "28 g" },
+            { "item": "Nuez moscada", "cantidad": "0,5 g" },
+            { "item": "Sal", "cantidad": "0,5 g" },
+            { "item": "Huevo entero", "cantidad": "26 g" },
+            { "item": "Harina", "cantidad": "56 g" },
+            { "item": "Polvos de hornear", "cantidad": "16 g" },
+            { "item": "Mantequilla de maní", "cantidad": "61 g" },
+            { "item": "Maní tostado", "cantidad": "31 g" },
+            { "item": "Azúcar para decorar", "cantidad": "Sin cantidad indicada" }
+          ],
+          "procedimiento": [
+            "Tostar maní a 180 °C por 8 minutos.",
+            "Tamizar los secos (polvo de hornear, nuez moscada, sal y harina).",
+            "Con ayuda de la pala, pomar la mantequilla con el azúcar y el azúcar morena, aprox. 5 minutos.",
+            "Romper el huevo y añadirlo en tandas para que se incorpore correctamente.",
+            "Batir la mezcla hasta que quede completamente homogénea.",
+            "Añadir la mantequilla de maní y luego los secos previamente tamizados.",
+            "Añadir el maní previamente cortado en trozos.",
+            "Bolear las cookies de 50 gramos.",
+            "Decorar con pedazos de maní (2 a 3 pedacitos).",
+            "Espolvorear azúcar antes de hornear.",
+            "Hornear a 160 °C por 15 minutos, en un silpat.",
+            "Enfriar."
+          ],
+          "notas": [
+            "«Congelación de la masa hasta 3 meses».",
+            "«Cremado: 1. mantequilla y azúcar; 2. huevo; 3. mantequilla de maní; 4. secos».",
+            "«Proceso de cremado parte desde la mantequilla hasta los secos»."
+          ]
+        },
+        {
+          "titulo": "Caramelo",
+          "fuente": "Página 7 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Azúcar", "cantidad": "46 g" },
+            { "item": "Crema", "cantidad": "56 g" },
+            { "item": "Mantequilla", "cantidad": "14 g" },
+            { "item": "Glucosa", "cantidad": "10 g" },
+            { "item": "Chocolate blanco", "cantidad": "8 g" }
+          ],
+          "procedimiento": [
+            "Realizar un caramelo seco en una olla.",
+            "Por otro lado, calentar la crema y verter en tandas hacia el caramelo cuando este tenga el color deseado.",
+            "Agregar la mantequilla cortada en cubos y la glucosa, cocinar todo hasta los 106 °C.",
+            "Fuera de fuego, añadir el chocolate blanco, revolver y luego triturar con la minipimer.",
+            "Extender en un recipiente, cubrir con film a contacto y dejar enfriar hasta que tenga una consistencia para manguear."
+          ],
+          "notas": [
+            "Junto a la crema: «33-35 %».",
+            "Junto a glucosa / chocolate blanco: «se puede reemplazar por miel».",
+            "«Caramelo en seco».",
+            "«De a poco ir echando azúcar. Fuego medio».",
+            "Corrección de clase: el impreso indica 112 °C; la temperatura confirmada es 106 °C.",
+            "«80 % de glucosa. Burbujitas: hervir crema».",
+            "«Revolver con espátula, revuelto con mantequilla. T° ambiente».",
+            "«Film a contacto»."
+          ]
+        },
+        {
+          "titulo": "Cabritas para decorar",
+          "fuente": "Página 8 del PDF escaneado.",
+          "ingredientes": [],
+          "procedimiento": [
+            "Cuando la galleta esté fría, decorar con caramelo y luego añadir las cabritas por encima."
+          ],
+          "notas": []
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "delicia-frambuesa-sesamo",
+      "titulo": "Delicia de frambuesa y sésamo integral",
+      "resumen": "Galleta sablée de sésamo integral rellena de mermelada de frambuesa. Receta bonus, con versión vegana en las notas.",
+      "categoria": "Bonus",
+      "clase": "Cookies",
+      "dia": "6 de julio de 2026",
+      "bonus": true,
+      "imagen": null,
+      "fuente": "Páginas 9 y 10 del PDF escaneado.",
+      "componentes": [
+        {
+          "titulo": "Sablée de sésamo",
+          "fuente": "Página 9 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Agua", "cantidad": "18 g" },
+            { "item": "Yema huevo", "cantidad": "40 g" },
+            { "item": "Azúcar de coco", "cantidad": "80 g" },
+            { "item": "Harina de arroz integral", "cantidad": "194 g" },
+            { "item": "Harina de almendra", "cantidad": "26 g" },
+            { "item": "Sal", "cantidad": "1 g" },
+            { "item": "Aceite de girasol", "cantidad": "20 g" },
+            { "item": "Aceite de coco", "cantidad": "62 g" },
+            { "item": "Semillas de sésamo", "cantidad": "Sin cantidad indicada" }
+          ],
+          "procedimiento": [
+            "Mezclar agua, yema y azúcar por 10 minutos hasta que el azúcar desaparezca un poco.",
+            "Mezclar todos los ingredientes en la máquina con la pala hasta que se vuelva una masa homogénea.",
+            "Estirar la masa entre dos papeles mantequilla, esparcir semillas de maravilla por toda la masa y apretar sutilmente con el uslero. Darle un grosor de 3 mm, llevar a congelar.",
+            "Cortar galletas con molde. A las caras, hacerles un hueco pequeño al medio con un corta pastas.",
+            "Congelar todas las tapas y bases antes de hornear a 160 °C por 10 minutos."
+          ],
+          "notas": [
+            "Versión vegana: reemplazar los 40 g de yema de huevo por 40 g de compota de manzana."
+          ]
+        },
+        {
+          "titulo": "Mermelada de frambuesa",
+          "fuente": "Página 10 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Frambuesas", "cantidad": "150 g" },
+            { "item": "Azúcar", "cantidad": "120 g" }
+          ],
+          "procedimiento": [
+            "Lavar bien las frutas si son frescas.",
+            "Llevar la fruta junto al azúcar a una olla para hacer la mermelada.",
+            "Hervir por 5 – 6 minutos para llegar a 106 °C y retirar del fuego para enfriar.",
+            "Tapar con film a contacto.",
+            "Utilizar con manga."
+          ],
+          "notas": [
+            "Decoración impresa: azúcar flor para decorar la mitad de la galleta."
+          ]
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "brownie-avellana",
+      "titulo": "Brownie de avellana con crema de chocolate montada",
+      "resumen": "Brownie de mantequilla noisette y chocolate amargo, coronado con crema inglesa de chocolate montada y virutas. Tres elaboraciones.",
+      "categoria": "Brownie",
+      "clase": "Cakes",
+      "dia": "7 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/brownie-avellana.jpg",
+      "fuente": "Páginas 11 a 13 del PDF escaneado.",
+      "componentes": [
+        {
+          "titulo": "Brownie",
+          "fuente": "Página 11 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Chocolate amargo", "cantidad": "110 g" },
+            { "item": "Mantequilla", "cantidad": "170 g" },
+            { "item": "Huevo", "cantidad": "150 g" },
+            { "item": "Azúcar", "cantidad": "100 g" },
+            { "item": "Azúcar morena", "cantidad": "100 g" },
+            { "item": "Harina", "cantidad": "90 g" },
+            { "item": "Cacao", "cantidad": "45 g" },
+            { "item": "Sal", "cantidad": "2 g" },
+            { "item": "Avellana decoración", "cantidad": "15 g" }
+          ],
+          "procedimiento": [
+            "Hacer mantequilla noisette: poner la mantequilla en una olla y derretir hasta que comience a dorarse lentamente.",
+            "Cambiar a un bol para mezclar con el chocolate previamente derretido. Con un mezquino, mezclar con movimientos circulares desde el centro.",
+            "Juntar los huevos con el azúcar y revolver hasta blanquear la mezcla.",
+            "Pasar el chocolate + mantequilla a los huevos y revolver con un batidor manual.",
+            "Añadir los secos previamente tamizados (harina, cacao y sal).",
+            "En un molde alargado con papel mantequilla, añadir la mezcla.",
+            "Hornear a 180 °C por 25 minutos."
+          ],
+          "notas": [
+            "«T° 85 °C en el centro para que un cake esté cocido. Termómetro de aguja».",
+            "«Excepción: carrot cake / cakes rellenos con frutas 92 °C».",
+            "Orden de incorporación indicado por la chef: 1. chocolate + mantequilla; 2. azúcar; 3. harina, cacao y sal; 4. huevo."
+          ]
+        },
+        {
+          "titulo": "Crema de chocolate montada",
+          "fuente": "Página 12 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Crema", "cantidad": "112 g" },
+            { "item": "Yema", "cantidad": "27 g" },
+            { "item": "Azúcar", "cantidad": "18 g" },
+            { "item": "Gelatina en polvo", "cantidad": "1 g" },
+            { "item": "Agua para hidratar", "cantidad": "5 g" },
+            { "item": "Chocolate amargo 70 %", "cantidad": "45 g" }
+          ],
+          "procedimiento": [
+            "Calentar la crema hasta que rompa hervor.",
+            "En la máquina con el globo blanquear las yemas con el azúcar, pasarlas a una olla.",
+            "Verter, en tandas, la crema a las yemas y el azúcar con un colador.",
+            "Hacer una crema inglesa base a 84 °C. Colar y utilizar minipimer.",
+            "Añadir la gelatina previamente hidratada fuera de fuego y luego verter todo sobre el chocolate. Dejar 3 minutos tapado con film para que se funda.",
+            "Triturar con la minipimer.",
+            "Enfriar en congelador; debe estar al menos a 4 °C para montar.",
+            "Utilizar boquilla saint honoré."
+          ],
+          "notas": [
+            "Junto a gelatina y agua: «hidratar 5 a 6 veces su peso. O agar-agar».",
+            "«Montar = incorporar aire».",
+            "«Mientras se calienta la crema, se blanquean las yemas».",
+            "«Esta crema se llama inglesa»."
+          ]
+        },
+        {
+          "titulo": "Virutas de chocolate amargo",
+          "fuente": "Página 13 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Chocolate amargo", "cantidad": "50 g" }
+          ],
+          "procedimiento": [
+            "Atemperar chocolate.",
+            "Hacer una fina capa en el mármol o granito, dejar enfriar.",
+            "Raspar con una espátula de chocolate."
+          ],
+          "notas": []
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "magdalena-francesa",
+      "titulo": "Magdalenas francesas bañadas",
+      "resumen": "Magdalena de concha con zeste de limón y miel, bañada en chocolate atemperado. Receta demo, sin fotografía en el material.",
+      "categoria": "Magdalenas",
+      "clase": "Cakes",
+      "dia": "7 de julio de 2026",
+      "bonus": true,
+      "imagen": null,
+      "fuente": "Páginas 14 y 15 del PDF escaneado.",
+      "componentes": [
+        {
+          "titulo": "Magdalenas",
+          "fuente": "Página 14 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Huevo fresco", "cantidad": "30 g" },
+            { "item": "Azúcar", "cantidad": "28 g" },
+            { "item": "Miel", "cantidad": "4 g" },
+            { "item": "Leche", "cantidad": "10 g" },
+            { "item": "Mantequilla fundida con zeste de limón", "cantidad": "27 g" },
+            { "item": "Harina", "cantidad": "32 g" },
+            { "item": "Polvos de hornear", "cantidad": "1 g" },
+            { "item": "Sal", "cantidad": "0,5 g" }
+          ],
+          "procedimiento": [
+            "En una máquina con el globo, blanquear huevos con azúcar.",
+            "Tamizar la harina con los polvos de hornear y juntar con la sal.",
+            "A los huevos añadir de a poco la leche y luego la mantequilla.",
+            "Incorporar los secos en tandas. Dejar enfriar la mezcla en refrigeración.",
+            "Pasar a una manga para dosificar en los moldes de concha, previamente enmantequillados.",
+            "Cocer a 190 °C por 10 minutos."
+          ],
+          "notas": []
+        },
+        {
+          "titulo": "Chocolate para decorar",
+          "fuente": "Página 15 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Chocolate amargo", "cantidad": "200 g" }
+          ],
+          "procedimiento": [
+            "Una vez frías, desmoldar y limpiar muy bien el molde con alcohol.",
+            "Atemperar chocolate.",
+            "Poner en una manga para dosificar un poco en cada molde de concha y luego sobreponer la magdalena para que se añada el chocolate.",
+            "Dejar enfriar y sacar del molde."
+          ],
+          "notas": []
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "cake-cuatro-cuartos",
+      "titulo": "Cake cuatro cuartos",
+      "resumen": "Cake clásico de partes iguales con glucosa y pasta de vainilla, terminado con un baño dulce de chocolate y nueces.",
+      "categoria": "Cake",
+      "clase": "Cakes",
+      "dia": "7 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/cake-cuatro-cuartos.jpg",
+      "fuente": "Páginas 16 y 17 del PDF escaneado.",
+      "componentes": [
+        {
+          "titulo": "Cake",
+          "fuente": "Página 16 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Mantequilla", "cantidad": "250 g" },
+            { "item": "Azúcar flor", "cantidad": "234 g" },
+            { "item": "Glucosa", "cantidad": "17 g" },
+            { "item": "Sal", "cantidad": "1,5 g" },
+            { "item": "Huevo entero", "cantidad": "250 g" },
+            { "item": "Harina", "cantidad": "250 g" },
+            { "item": "Polvos de hornear", "cantidad": "4 g" },
+            { "item": "Pasta de vainilla", "cantidad": "2 g" }
+          ],
+          "procedimiento": [
+            "En la máquina con la pala pomar la mantequilla con el azúcar flor, la sal y la pasta de vainilla.",
+            "Añadir los huevos previamente revueltos en tandas para que se unan correctamente a la mezcla anterior.",
+            "Tamizar los secos, harina más polvos de hornear, y añadirlos a la mezcla fuera de la máquina con ayuda de un mezquino y movimientos envolventes.",
+            "500 g de mezcla al molde previamente forrado con papel mantequilla.",
+            "Dejar en refrigeración por 1 a 2 horas antes de hornear.",
+            "150 °C por 40 minutos."
+          ],
+          "notas": [
+            "[Lectura probable] Una llave agrupa «Azúcar flor 234 g» y «Glucosa 17 g» con la suma «250» y una palabra que parece «humectante».",
+            "«Almíbar al final. 1 azúcar / 2 líquidos».",
+            "«Emulsión: mezclar agua con aceite (ganache)».",
+            "Orden de incorporación indicado por la chef: después de mantequilla y azúcar, incorporar 1. los secos; 2. los huevos."
+          ]
+        },
+        {
+          "titulo": "Baño dulce y con nueces",
+          "fuente": "Página 17 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Chocolate dulce", "cantidad": "200 g" },
+            { "item": "Aceite", "cantidad": "90 g" },
+            { "item": "Nueces tostadas", "cantidad": "20 g" }
+          ],
+          "procedimiento": [],
+          "procedimientoNota": "El original no incluye procedimiento para este baño.",
+          "notas": []
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "muffins-arandanos",
+      "titulo": "Muffins de arándanos",
+      "resumen": "Muffin esponjoso montado en capas con arándanos y coronado con crumble de almendra.",
+      "categoria": "Muffins",
+      "clase": "Cakes",
+      "dia": "7 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/muffins-arandanos.jpg",
+      "fuente": "Páginas 18 y 19 del PDF escaneado.",
+      "componentes": [
+        {
+          "titulo": "Muffin",
+          "fuente": "Página 18 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Leche", "cantidad": "90 g" },
+            { "item": "Huevo entero", "cantidad": "100 g" },
+            { "item": "Azúcar", "cantidad": "70 g" },
+            { "item": "Miel", "cantidad": "20 g" },
+            { "item": "Harina", "cantidad": "165 g" },
+            { "item": "Polvos de hornear", "cantidad": "10 g" },
+            { "item": "Maicena", "cantidad": "20 g" },
+            { "item": "Aceite", "cantidad": "100 g" },
+            { "item": "Arándanos", "cantidad": "130 g" }
+          ],
+          "procedimiento": [
+            "Comenzar a batir los huevos hasta que espumen.",
+            "Añadir de a poco el azúcar y continuar batiendo.",
+            "Verter el aceite en forma de hilo mientras se bate la mezcla; cuando esté totalmente integrado, terminar de batir.",
+            "Tamizar los ingredientes secos y añadir a la mezcla, continuar con la leche y luego la miel.",
+            "Pasar la mezcla a una manga para porcionar 75 g.",
+            "Poner el crumble de almendra por encima.",
+            "Hornear a 160 °C por 15 minutos."
+          ],
+          "notas": [
+            "Junto a la miel: «o glucosa 1:1».",
+            "Montaje en capas indicado en clase: con la mezcla en una manga, dosificar 25 g de mezcla, añadir 3 arándanos; agregar otros 25 g de mezcla y 3 arándanos; terminar con 35 g de mezcla y 3 arándanos por encima, junto con el crumble."
+          ]
+        },
+        {
+          "titulo": "Crumble de almendra",
+          "fuente": "Página 19 del PDF escaneado.",
+          "ingredientes": [
+            { "item": "Mantequilla", "cantidad": "30 g" },
+            { "item": "Azúcar", "cantidad": "30 g" },
+            { "item": "Almendra harina", "cantidad": "30 g" },
+            { "item": "Harina", "cantidad": "30 g" }
+          ],
+          "procedimiento": [
+            "Juntar todos los ingredientes (la mantequilla debe estar en cubos y fría).",
+            "Arenar la mezcla, pellizcando la masa o, si es en una batidora de pedestal, utilizando la lira.",
+            "Dejar congelar antes de hornear."
+          ],
+          "notas": [
+            "«Moler sin llegar a los aceites»."
+          ]
+        }
+      ],
+      "alternativas": []
+    }
+  ]
+}

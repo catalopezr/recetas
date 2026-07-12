@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Sin fotografía — Recetario de Cata">
+  <rect width="1200" height="900" fill="#EDE4D4"/>
+  <!-- Marco sutil dentro de la retícula de marca -->
+  <rect x="40" y="40" width="1120" height="820" rx="24" fill="none" stroke="#D2C0A3" stroke-width="2"/>
+  <!-- Bloque monograma Rc (Paprika, esquinas redondeadas ~22) -->
+  <g transform="translate(600 372)">
+    <rect x="-90" y="-90" width="180" height="180" rx="40" fill="#BC3F29"/>
+    <text x="-42" y="34" text-anchor="middle" font-family="'Jost','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="118" fill="#FBF8F1">R</text>
+    <text x="40" y="34" text-anchor="middle" font-family="'DM Serif Display',Georgia,'Times New Roman',serif" font-style="italic" font-size="104" fill="#FBF8F1">c</text>
+  </g>
+  <!-- Rótulo -->
+  <text x="600" y="560" text-anchor="middle" font-family="'Jost','Helvetica Neue',Arial,sans-serif" font-weight="600" font-size="44" letter-spacing="1" fill="#4B2C13">Recetario de Cata</text>
+  <text x="600" y="626" text-anchor="middle" font-family="'Jost','Helvetica Neue',Arial,sans-serif" font-weight="500" font-size="26" letter-spacing="6" fill="#B37F57">SIN FOTOGRAFÍA</text>
+  <text x="600" y="672" text-anchor="middle" font-family="'Jost','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="22" letter-spacing="2" fill="#959367">Receta sin imagen en el material</text>
+</svg>

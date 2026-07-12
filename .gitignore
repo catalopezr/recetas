@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Artefactos temporales de build (se regeneran con los scripts)
+emb_*.jpg

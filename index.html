@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recetario de Cata</title>
-  <meta name="description" content="Repositorio de recetas, tips y anotaciones de repostería. Precisión técnica con calidez de taller.">
+  <meta name="description" content="Repositorio de recetas, tips y anotaciones de repostería. Curso Las Claves de la Pastelería — Ecole. Precisión técnica con calidez de taller.">
 
   <!-- Favicon: monograma Rc en bloque redondeado Paprika -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='22' fill='%23BC3F29'/%3E%3Ctext x='16' y='44' font-family='Georgia,serif' font-size='34' fill='%23FBF8F1'%3ER%3C/text%3E%3Ctext x='36' y='44' font-family='Georgia,serif' font-style='italic' font-size='30' fill='%23FBF8F1'%3Ec%3C/text%3E%3C/svg%3E">
@@ -14,189 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      /* Paleta oficial — restricción dura */
-      --artichoke: #959367;
-      --artichoke-75: #ABA986;
-      --artichoke-50: #C2C0A6;
-      --artichoke-25: #D9D8C7;
-      --french-beige: #B37F57;
-      --paprika: #BC3F29;
-      --brunette: #4B2C13;
-      --crema: #FBF8F1;
-      --merengue: #EDE4D4;
-      --neutral-3: #E3D6C0;
-      --neutral-4: #D2C0A3;
-      --radius-sm: 10px;
-      --radius-md: 16px;
-      --radius-lg: 24px;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Jost', system-ui, sans-serif;
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 24px;
-      color: var(--brunette);
-      background: var(--crema);
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-
-    /* ---------- Wordmark ---------- */
-    .wordmark { display: inline-flex; align-items: baseline; gap: .28em; line-height: 1; white-space: nowrap; }
-    .wordmark .recetario {
-      font-family: 'Jost', sans-serif;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-    }
-    .wordmark .decata {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-style: italic;
-      font-weight: 400;
-    }
-
-    /* Monograma Rc */
-    .monogram {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 40px; height: 40px; border-radius: 22px;
-      background: var(--paprika); color: var(--crema);
-      line-height: 1; flex: none;
-    }
-    .monogram .r { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 20px; }
-    .monogram .c { font-family: 'DM Serif Display', serif; font-style: italic; font-size: 18px; margin-left: -1px; }
-
-    /* ---------- Header ---------- */
-    header {
-      position: sticky; top: 0; z-index: 20;
-      background: rgba(251, 248, 241, 0.92);
-      backdrop-filter: saturate(1.4) blur(8px);
-      border-bottom: 1px solid var(--neutral-3);
-    }
-    .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-    .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--brunette); }
-    .brand .wordmark { font-size: 19px; }
-    nav.links { display: flex; gap: 28px; align-items: center; }
-    nav.links a {
-      font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em;
-      font-size: 12.5px; color: var(--brunette); text-decoration: none; opacity: .85;
-    }
-    nav.links a:hover { opacity: 1; color: var(--paprika); }
-
-    /* ---------- Hero ---------- */
-    .hero { padding: 84px 0 64px; }
-    .hero .kicker {
-      font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em;
-      font-size: 12px; color: var(--french-beige); margin-bottom: 20px;
-    }
-    .hero h1 {
-      font-family: 'Jost', sans-serif; font-weight: 600;
-      font-size: clamp(38px, 6vw, 60px); line-height: 1.05;
-      letter-spacing: 0.01em; max-width: 15ch;
-    }
-    .hero h1 em {
-      font-family: 'DM Serif Display', serif; font-style: italic; font-weight: 400;
-      color: var(--paprika);
-    }
-    .hero p.lead { margin: 24px 0 36px; max-width: 52ch; font-size: 17px; line-height: 27px; }
-    .cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 9px;
-      font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; font-size: 13px;
-      padding: 14px 24px; border-radius: var(--radius-sm); text-decoration: none; border: 1.5px solid transparent;
-      transition: transform .12s ease, background .18s ease;
-    }
-    .btn-primary { background: var(--paprika); color: var(--crema); }
-    .btn-primary:hover { transform: translateY(-1px); background: #a8371f; }
-    .btn-ghost { border-color: var(--brunette); color: var(--brunette); background: transparent; }
-    .btn-ghost:hover { background: var(--merengue); }
-
-    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
-
-    /* Tarjeta de portada (olivo) */
-    .cover-card {
-      background: var(--artichoke); color: var(--crema);
-      border-radius: var(--radius-lg); padding: 34px;
-      box-shadow: 0 24px 60px -30px rgba(75,44,19,.5);
-    }
-    .cover-card .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500;
-      background: rgba(251,248,241,.16); padding: 6px 12px; border-radius: 999px; margin-bottom: 22px;
-    }
-    .cover-card h3 { font-family: 'DM Serif Display', serif; font-style: italic; font-weight: 400; font-size: 30px; margin-bottom: 8px; }
-    .cover-card .stat-row { display: flex; gap: 26px; margin-top: 26px; padding-top: 22px; border-top: 1px solid rgba(251,248,241,.24); }
-    .cover-card .stat .n { font-weight: 600; font-size: 26px; font-variant-numeric: tabular-nums; display: block; }
-    .cover-card .stat .l { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; opacity: .82; }
-
-    /* ---------- Secciones ---------- */
-    section.block { padding: 68px 0; }
-    .sec-head { margin-bottom: 40px; }
-    .sec-head h2 {
-      font-family: 'DM Serif Display', serif; font-style: italic; font-weight: 400;
-      font-size: 30px; color: var(--paprika); line-height: 1.15;
-    }
-    .sec-head p { margin-top: 10px; max-width: 56ch; color: var(--brunette); opacity: .9; }
-
-    /* Grid de recetas */
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .card {
-      background: #fff; border: 1px solid var(--neutral-3); border-radius: var(--radius-md);
-      overflow: hidden; display: flex; flex-direction: column; transition: transform .14s ease, box-shadow .18s ease;
-    }
-    .card:hover { transform: translateY(-3px); box-shadow: 0 20px 44px -28px rgba(75,44,19,.45); }
-    .card .thumb {
-      aspect-ratio: 3 / 2; background: var(--merengue); position: relative;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .card .thumb .mono-big { opacity: .35; }
-    .chip {
-      position: absolute; top: 14px; left: 14px;
-      font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; font-weight: 500;
-      padding: 5px 11px; border-radius: 999px;
-    }
-    .chip.cat { background: var(--french-beige); color: var(--crema); }        /* relleno = categoría */
-    .chip.state { background: transparent; border: 1.5px solid var(--artichoke); color: var(--brunette); } /* contorno = estado */
-    .card .body { padding: 20px 20px 22px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
-    .card h4 { font-family: 'Jost', sans-serif; font-weight: 600; font-size: 20px; line-height: 1.2; }
-    .card .meta { display: flex; gap: 18px; margin-top: auto; padding-top: 6px; }
-    .card .meta .item { display: flex; align-items: center; gap: 7px; font-size: 13px; font-variant-numeric: tabular-nums; }
-    .card .meta svg { flex: none; }
-
-    /* Bloque Tip (merengue) */
-    .tip {
-      background: var(--merengue); border-radius: var(--radius-md);
-      padding: 30px 34px; display: flex; gap: 18px; align-items: flex-start; margin-top: 8px;
-    }
-    .tip .label { font-family: 'DM Serif Display', serif; font-style: italic; color: var(--paprika); font-size: 21px; flex: none; }
-    .tip p { font-size: 16px; line-height: 26px; }
-
-    /* Franja de valores */
-    .values { background: var(--brunette); color: var(--crema); }
-    .values .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-    .values .v h3 { font-family: 'DM Serif Display', serif; font-style: italic; font-weight: 400; font-size: 24px; margin-bottom: 10px; color: var(--crema); }
-    .values .v p { opacity: .86; line-height: 25px; }
-    .values .num { display: block; font-size: 13px; letter-spacing: .1em; opacity: .6; margin-bottom: 14px; font-variant-numeric: tabular-nums; }
-
-    /* ---------- Footer ---------- */
-    footer { padding: 54px 0 40px; border-top: 1px solid var(--neutral-3); }
-    .foot-row { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
-    footer .wordmark { font-size: 17px; }
-    footer small { color: var(--brunette); opacity: .7; font-size: 13px; }
-
-    @media (max-width: 860px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 36px; }
-      .cards, .values .grid3 { grid-template-columns: 1fr; }
-      nav.links { display: none; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/estilos.css">
 </head>
 <body>
 
@@ -219,24 +37,24 @@
     <div class="wrap hero">
       <div class="hero-grid">
         <div>
-          <p class="kicker">Repostería de taller · Recetas estandarizadas</p>
+          <p class="kicker">Ecole · Las Claves de la Pastelería · Chef Fernanda Pérez</p>
           <h1>Precisión técnica con <em>calidez de taller</em>.</h1>
-          <p class="lead">Repositorio de recetas, tips y anotaciones de repostería. Cantidades exactas, tiempos claros y el porqué de cada paso, listos para escalar a producciones mayores.</p>
+          <p class="lead">Transcripción fiel de las clases de cookies y cakes: cantidades al gramo, tiempos y temperaturas exactas, y las anotaciones de clase separadas del paso a paso. Ocho recetas listas para reproducir y estandarizar.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#recetas">Ver recetas</a>
-            <a class="btn btn-ghost" href="#tecnicas">Explorar técnicas</a>
+            <a class="btn btn-primary" href="#recetas">Ver las 8 recetas</a>
+            <a class="btn btn-ghost" href="#tecnicas">Técnicas y tips</a>
           </div>
         </div>
-        <div class="cover-card">
-          <span class="eyebrow">Ficha del día</span>
-          <h3>Merengue suizo</h3>
-          <p style="opacity:.9">Base sedosa y estable para coberturas y cremas de mantequilla. Se trabaja al baño maría hasta disolver el azúcar.</p>
+        <a class="cover-card" href="recetas/cake-cuatro-cuartos.html" style="text-decoration:none">
+          <span class="eyebrow">Ficha destacada</span>
+          <h3>Cake cuatro cuartos</h3>
+          <p style="opacity:.9">Cake clásico de partes iguales con glucosa y pasta de vainilla, terminado con un baño dulce de chocolate y nueces. Reposa en frío antes de hornear.</p>
           <div class="stat-row">
-            <div class="stat"><span class="n">65&nbsp;°C</span><span class="l">Punto claras</span></div>
-            <div class="stat"><span class="n">8&nbsp;min</span><span class="l">Batido</span></div>
-            <div class="stat"><span class="n">2:1</span><span class="l">Azúcar:clara</span></div>
+            <div class="stat"><span class="n">150&nbsp;°C</span><span class="l">Horneado</span></div>
+            <div class="stat"><span class="n">40&nbsp;min</span><span class="l">En horno</span></div>
+            <div class="stat"><span class="n">500&nbsp;g</span><span class="l">Por molde</span></div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -244,54 +62,124 @@
     <section class="block" id="recetas">
       <div class="wrap">
         <div class="sec-head">
-          <h2>Recetas del recetario</h2>
-          <p>Cada ficha va al grano: ingredientes al gramo, tiempos y temperaturas. Los chips indican la categoría y el estado de estandarización.</p>
+          <h2>Recetas del curso</h2>
+          <p>Clase 1 — Cookies (6 de julio) y Clase 2 — Cakes (7 de julio). Cada ficha va al grano: ingredientes al gramo, tiempos y temperaturas, y las anotaciones de clase como tips separados.</p>
         </div>
         <div class="cards">
-
-          <article class="card">
+          <!-- CARDS:START -->
+          <a class="card" href="recetas/galletas-rellenas-limon.html">
             <div class="thumb">
-              <span class="chip cat">Tortas</span>
-              <span class="monogram mono-big" style="width:56px;height:56px"><span class="r">R</span><span class="c">c</span></span>
+              <span class="chip cat">Galletas</span>
+              <img src="assets/img/recetas/galletas-rellenas-limon.jpg" alt="Galletas rellenas de mermelada y curd de limón" loading="lazy">
             </div>
             <div class="body">
-              <h4>Bizcocho genovés</h4>
-              <p>Miga aireada y elástica; se monta el huevo entero con azúcar hasta triplicar volumen antes de incorporar la harina en tres tandas.</p>
+              <h4>Galletas rellenas de mermelada y curd de limón</h4>
+              <p>Galleta sablée estilo «quebrada» rellena de curd y mermelada de limón, terminada con un glaseado brillante. Cuatro elaboraciones que se montan en orden.</p>
               <div class="meta">
-                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>35&nbsp;min</span>
-                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z"/></svg>180&nbsp;°C</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>4&nbsp;elaboraciones</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>6 de julio de 2026</span>
               </div>
             </div>
-          </article>
-
-          <article class="card">
+          </a>
+          <a class="card" href="recetas/galletas-mangueadas.html">
             <div class="thumb">
-              <span class="chip cat">Hojaldre</span>
+              <span class="chip cat">Galletas</span>
+              <img src="assets/img/recetas/galletas-mangueadas.jpg" alt="Galletas mangueadas" loading="lazy">
             </div>
             <div class="body">
-              <h4>Hojaldre invertido</h4>
-              <p>La mantequilla envuelve la masa para un laminado más regular. Reposo en frío entre vueltas para que no se funda la materia grasa.</p>
+              <h4>Galletas mangueadas</h4>
+              <p>Masa cremosa con harina de almendra que se manguea con boquilla rizada y se termina con chocolate y almendra picada.</p>
               <div class="meta">
-                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>90&nbsp;min</span>
-                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18"/><path d="M4 11a8 8 0 0 0 16 0"/></svg>6&nbsp;vueltas</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>1&nbsp;elaboración</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>6 de julio de 2026</span>
               </div>
             </div>
-          </article>
-
-          <article class="card">
+          </a>
+          <a class="card" href="recetas/cookie-mani-caramelo.html">
             <div class="thumb">
-              <span class="chip cat">Cremas</span>
+              <span class="chip cat">Cookies</span>
+              <img src="assets/img/recetas/cookie-mani-caramelo.jpg" alt="Cookies de maní con caramelo" loading="lazy">
             </div>
             <div class="body">
-              <h4>Crema pastelera</h4>
-              <p>Espesa y sin grumos: templa las yemas con parte de la leche caliente antes de volver todo al fuego y cocer hasta la primera burbuja.</p>
+              <h4>Cookies de maní con caramelo</h4>
+              <p>Cookie de mantequilla de maní con frosting de caramelo seco y cabritas. Tres elaboraciones: la cookie, el caramelo y la decoración.</p>
               <div class="meta">
-                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>15&nbsp;min</span>
-                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18"/><path d="M4 11a8 8 0 0 0 16 0"/></svg>500&nbsp;g</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>3&nbsp;elaboraciones</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>6 de julio de 2026</span>
               </div>
             </div>
-          </article>
-
+          </a>
+          <a class="card" href="recetas/delicia-frambuesa-sesamo.html">
+            <div class="thumb">
+              <span class="chip bonus">Bonus</span>
+              <img src="assets/img/recetas/placeholder.svg" alt="Delicia de frambuesa y sésamo integral" loading="lazy">
+            </div>
+            <div class="body">
+              <h4>Delicia de frambuesa y sésamo integral</h4>
+              <p>Galleta sablée de sésamo integral rellena de mermelada de frambuesa. Receta bonus, con versión vegana en las notas.</p>
+              <div class="meta">
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>2&nbsp;elaboraciones</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>6 de julio de 2026</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="recetas/brownie-avellana.html">
+            <div class="thumb">
+              <span class="chip cat">Brownie</span>
+              <img src="assets/img/recetas/brownie-avellana.jpg" alt="Brownie de avellana con crema de chocolate montada" loading="lazy">
+            </div>
+            <div class="body">
+              <h4>Brownie de avellana con crema de chocolate montada</h4>
+              <p>Brownie de mantequilla noisette y chocolate amargo, coronado con crema inglesa de chocolate montada y virutas. Tres elaboraciones.</p>
+              <div class="meta">
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>3&nbsp;elaboraciones</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>7 de julio de 2026</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="recetas/magdalena-francesa.html">
+            <div class="thumb">
+              <span class="chip bonus">Bonus</span>
+              <img src="assets/img/recetas/placeholder.svg" alt="Magdalenas francesas bañadas" loading="lazy">
+            </div>
+            <div class="body">
+              <h4>Magdalenas francesas bañadas</h4>
+              <p>Magdalena de concha con zeste de limón y miel, bañada en chocolate atemperado. Receta demo, sin fotografía en el material.</p>
+              <div class="meta">
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>2&nbsp;elaboraciones</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>7 de julio de 2026</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="recetas/cake-cuatro-cuartos.html">
+            <div class="thumb">
+              <span class="chip cat">Cake</span>
+              <img src="assets/img/recetas/cake-cuatro-cuartos.jpg" alt="Cake cuatro cuartos" loading="lazy">
+            </div>
+            <div class="body">
+              <h4>Cake cuatro cuartos</h4>
+              <p>Cake clásico de partes iguales con glucosa y pasta de vainilla, terminado con un baño dulce de chocolate y nueces.</p>
+              <div class="meta">
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>2&nbsp;elaboraciones</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>7 de julio de 2026</span>
+              </div>
+            </div>
+          </a>
+          <a class="card" href="recetas/muffins-arandanos.html">
+            <div class="thumb">
+              <span class="chip cat">Muffins</span>
+              <img src="assets/img/recetas/muffins-arandanos.jpg" alt="Muffins de arándanos" loading="lazy">
+            </div>
+            <div class="body">
+              <h4>Muffins de arándanos</h4>
+              <p>Muffin esponjoso montado en capas con arándanos y coronado con crumble de almendra.</p>
+              <div class="meta">
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></svg>2&nbsp;elaboraciones</span>
+                <span class="item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4B2C13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 10h16"/><path d="M8 3v4"/><path d="M16 3v4"/></svg>7 de julio de 2026</span>
+              </div>
+            </div>
+          </a>
+          <!-- CARDS:END -->
         </div>
       </div>
     </section>
@@ -305,7 +193,7 @@
         </div>
         <div class="tip">
           <span class="label">Tip:</span>
-          <p>Bate las claras a punto de nieve firme con el bol impecable y sin rastro de grasa; una sola gota impide que monten. Sopletea a 5&nbsp;cm para dorar sin cuajar el relleno.</p>
+          <p>Para saber si un cake está cocido, apunta a <strong>85&nbsp;°C en el centro</strong> con termómetro de aguja; en carrot cake o cakes rellenos con fruta, sube a 92&nbsp;°C. Y en el caramelo seco: fuego medio, echando el azúcar de a poco, y cocina hasta 106&nbsp;°C.</p>
         </div>
       </div>
     </section>
@@ -321,8 +209,8 @@
           </div>
           <div class="v">
             <span class="num">02</span>
-            <h3>Cálido, no cursi</h3>
-            <p>Oficio con afecto. Se explica el porqué de cada paso para que la técnica se entienda, no se recite de memoria.</p>
+            <h3>Fiel al material</h3>
+            <p>Se conserva el texto impreso como base y las correcciones de clase se marcan de forma explícita. Lo dudoso queda señalado, no inventado.</p>
           </div>
           <div class="v">
             <span class="num">03</span>
@@ -340,7 +228,10 @@
         <span class="monogram"><span class="r">R</span><span class="c">c</span></span>
         <span class="wordmark"><span class="recetario">Recetario</span><span class="decata">de&nbsp;Cata</span></span>
       </a>
-      <small>© 2026 Recetario de Cata · Repostería de taller</small>
+      <div class="foot-credits">
+        <span class="line"><b>Las Claves de la Pastelería</b> · Ecole</span>
+        <span class="line">Chef instructora Fernanda Pérez · Cookies 6 jul · Cakes 7 jul de 2026</span>
+      </div>
     </div>
   </footer>
 
