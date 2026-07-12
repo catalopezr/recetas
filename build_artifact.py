@@ -189,8 +189,8 @@ def main():
     <div class="wrap hero"><div class="hero-grid">
       <div>
         <p class="kicker">Ecole · Las Claves de la Pastelería · Chef Fernanda Pérez</p>
-        <h1>Precisión técnica con <em>calidez de taller</em>.</h1>
-        <p class="lead">Transcripción fiel de las clases de cookies y cakes: cantidades al gramo, tiempos y temperaturas exactas, y las anotaciones de clase separadas del paso a paso. Ocho recetas listas para reproducir y estandarizar.</p>
+        <h1>Básicos <em>exactos</em></h1>
+        <p class="lead">Repositorio de recetas con experiencia práctica y corroborada para conseguir productos estandarizados y de calidad.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#recetas" data-nav="inicio" data-scroll="recetas">Ver las 8 recetas</a>
           <a class="btn btn-ghost" href="#tecnicas" data-nav="inicio" data-scroll="tecnicas">Técnicas y tips</a>
@@ -230,9 +230,9 @@ def main():
     </div></section>
 
     <section class="values" id="valores"><div class="wrap block"><div class="grid3">
-      <div class="v"><span class="num">01</span><h3>Preciso, no rígido</h3><p>Cantidades y tiempos exactos, en lenguaje humano. El dato en gramos, minutos y grados; nunca «un poco» ni «al gusto».</p></div>
-      <div class="v"><span class="num">02</span><h3>Fiel al material</h3><p>Se conserva el texto impreso como base y las correcciones de clase se marcan de forma explícita. Lo dudoso queda señalado, no inventado.</p></div>
-      <div class="v"><span class="num">03</span><h3>Listo para escalar</h3><p>Recetas, ingredientes y cantidades estandarizados, pensados para crecer hacia producciones mayores sin perder el punto.</p></div>
+      <div class="v"><span class="num">01</span><h3>Aprende con práctica</h3></div>
+      <div class="v"><span class="num">02</span><h3>Aterriza con contenido</h3></div>
+      <div class="v"><span class="num">03</span><h3>Replica repitiendo</h3></div>
     </div></div></section>
   </section>
 
