@@ -90,13 +90,13 @@ def placeholder_data_uri():
 
 
 # --------------------------------------------------------------- render views ---
-def render_card(recipe, uri):
+def render_card(recipe, key):
     chip = ('<span class="chip bonus">Bonus</span>' if recipe.get("bonus")
             else f'<span class="chip cat">{build.esc(recipe["categoria"])}</span>')
     n = len(recipe["componentes"])
     lbl = "elaboración" if n == 1 else "elaboraciones"
     return f"""<a class="card" href="#receta-{recipe['slug']}" data-nav="receta-{recipe['slug']}">
-  <div class="thumb">{chip}<img src="{uri}" alt="{build.esc(recipe['titulo'])}"></div>
+  <div class="thumb">{chip}<img data-img="{key}" alt="{build.esc(recipe['titulo'])}"></div>
   <div class="body">
     <h4>{build.esc(recipe['titulo'])}</h4>
     <p>{build.esc(recipe['resumen'])}</p>
@@ -108,7 +108,7 @@ def render_card(recipe, uri):
 </a>"""
 
 
-def render_receta_view(recipe, meta, uri):
+def render_receta_view(recipe, meta, key):
     chip = ('<span class="chip bonus">Bonus</span>' if recipe.get("bonus")
             else f'<span class="chip cat">{build.esc(recipe["categoria"])}</span>')
     alt = ""
@@ -129,7 +129,7 @@ def render_receta_view(recipe, meta, uri):
     return f"""<section class="view" id="receta-{recipe['slug']}">
   <div class="wrap" style="padding-top:26px"><a class="volver" href="#inicio" data-nav="inicio">← Volver al recetario</a></div>
   <div class="wrap receta-hero"><div class="grid">
-    <div class="foto"><img src="{uri}" alt="{foto_alt}" width="1200" height="1500"></div>
+    <div class="foto"><img data-img="{key}" alt="{foto_alt}" width="1200" height="1500"></div>
     <div class="info">
       {chip}
       <p class="kicker">{build.esc(meta['curso'])} · Clase de {build.esc(recipe['clase'])}</p>
@@ -149,13 +149,22 @@ def main():
 
     print("  · Preparando fuentes de marca...")
     fontface = build_font_faces()
-    print("  · Incrustando imágenes...")
-    ph = placeholder_data_uri()
-    uris = {r["slug"]: (img_data_uri(ROOT / r["imagen"]) if r["imagen"] else ph) for r in recetas}
+    print("  · Incrustando imágenes (deduplicadas)...")
+    img_map = {}   # key -> dataURI: cada imagen se embebe una sola vez
+    key_of = {}    # slug -> key
+    for r in recetas:
+        if r["imagen"]:
+            key = r["slug"]
+            img_map.setdefault(key, img_data_uri(ROOT / r["imagen"]))
+        else:
+            key = "__ph__"
+            img_map.setdefault(key, placeholder_data_uri())
+        key_of[r["slug"]] = key
+    img_json = json.dumps(img_map)
 
     css = (ROOT / "assets/estilos.css").read_text(encoding="utf-8")
-    cards = "\n".join(render_card(r, uris[r["slug"]]) for r in recetas)
-    recetas_views = "\n".join(render_receta_view(r, meta, uris[r["slug"]]) for r in recetas)
+    cards = "\n".join(render_card(r, key_of[r["slug"]]) for r in recetas)
+    recetas_views = "\n".join(render_receta_view(r, meta, key_of[r["slug"]]) for r in recetas)
 
     featured = next(r for r in recetas if r["slug"] == "cake-cuatro-cuartos")
 
@@ -192,7 +201,7 @@ def main():
         <h1>Básicos <em>exactos</em></h1>
         <p class="lead">Repositorio de recetas con experiencia práctica y corroborada para conseguir productos estandarizados y de calidad.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="#recetas" data-nav="inicio" data-scroll="recetas">Ver las 8 recetas</a>
+          <a class="btn btn-primary" href="#recetas" data-nav="inicio" data-scroll="recetas">Ver las 14 recetas</a>
           <a class="btn btn-ghost" href="#tecnicas" data-nav="inicio" data-scroll="tecnicas">Técnicas y tips</a>
         </div>
       </div>
@@ -211,7 +220,7 @@ def main():
     <section class="block" id="recetas"><div class="wrap">
       <div class="sec-head">
         <h2>Recetas del curso</h2>
-        <p>Clase 1 — Cookies (6 de julio) y Clase 2 — Cakes (7 de julio). Cada ficha va al grano: ingredientes al gramo, tiempos y temperaturas, y las anotaciones de clase como tips separados.</p>
+        <p>Cuatro clases del curso: cookies (6 jul), cakes (7 jul), postres en vaso (13 jul) y chocolatería básica (14 jul). Cada ficha va al grano: ingredientes al gramo, tiempos y temperaturas, y las anotaciones de clase como tips separados.</p>
       </div>
       <div class="cards">
 {cards}
@@ -247,13 +256,19 @@ def main():
     </a>
     <div class="foot-credits">
       <span class="line"><b>Las Claves de la Pastelería</b> · Ecole</span>
-      <span class="line">Chef instructora Fernanda Pérez · Cookies 6 jul · Cakes 7 jul de 2026</span>
+      <span class="line">Chef instructora Fernanda Pérez · Cookies, cakes, postres en vaso y chocolatería · jul 2026</span>
     </div>
   </div>
 </footer>
 
 <script>
 (function () {{
+  var IMG = {img_json};
+  var imgs = document.querySelectorAll('[data-img]');
+  for (var j = 0; j < imgs.length; j++) {{
+    var k = imgs[j].getAttribute('data-img');
+    if (IMG[k]) imgs[j].src = IMG[k];
+  }}
   var views = document.querySelectorAll('.view');
   function show(id, scrollId) {{
     for (var i = 0; i < views.length; i++) views[i].classList.toggle('active', views[i].id === id);

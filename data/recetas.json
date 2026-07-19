@@ -1,14 +1,16 @@
 {
   "meta": {
     "titulo": "Recetario digital",
-    "subtitulo": "Cookies y cakes — Ecole / Las Claves de la Pastelería",
+    "subtitulo": "Cookies, cakes, postres en vaso y chocolatería — Ecole / Las Claves de la Pastelería",
     "descripcion": "Transcripción depurada fiel al material impreso y a las anotaciones manuscritas.",
     "escuela": "Ecole",
     "curso": "Las Claves de la Pastelería",
     "chef": "Fernanda Pérez",
     "clases": [
       { "nombre": "Cookies", "dia": "6 de julio de 2026" },
-      { "nombre": "Cakes", "dia": "7 de julio de 2026" }
+      { "nombre": "Cakes", "dia": "7 de julio de 2026" },
+      { "nombre": "Postres en vaso", "dia": "13 de julio de 2026" },
+      { "nombre": "Chocolatería básica", "dia": "14 de julio de 2026" }
     ],
     "criterio": [
       "El texto impreso se conserva como base. Cuando una anotación de clase fue confirmada como corrección o ajuste, se incorpora de forma explícita y queda señalada en las notas.",
@@ -558,6 +560,408 @@
           "notas": [
             "«Moler sin llegar a los aceites»."
           ]
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "vaso-tres-chocolates",
+      "titulo": "Vaso tres chocolates",
+      "resumen": "Postre en vaso con tres mousses —chocolate negro, de leche y blanco— sobre una crema inglesa base, rematado con un crujiente de praliné. Cinco elaboraciones montadas en capas.",
+      "categoria": "Postres en vaso",
+      "clase": "Postres en vaso",
+      "dia": "13 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/vaso-tres-chocolates.jpg",
+      "fuente": "Páginas 1 a 5 del PDF escaneado (páginas impresas 21 a 25).",
+      "componentes": [
+        {
+          "titulo": "Crema inglesa base (método invertido)",
+          "fuente": "Página 1 del PDF escaneado (página impresa 21).",
+          "ingredientes": [
+            { "item": "Crema", "cantidad": "370 g" },
+            { "item": "Yema", "cantidad": "80 g" },
+            { "item": "Azúcar", "cantidad": "70 g" },
+            { "item": "Gelatina", "cantidad": "6 g" },
+            { "item": "Agua para hidratar", "cantidad": "30 g" }
+          ],
+          "procedimiento": [
+            "Poner la crema con el azúcar a hervir en una olla.",
+            "Tener la yema reservada en un bowl; agregar de a poco (en tandas) la crema caliente a las yemas revolviendo sin parar.",
+            "Fundir la gelatina previamente hidratada en el microondas y luego añadirla a la mezcla."
+          ],
+          "notas": [
+            "Alternativa confirmada: reemplazar la gelatina y su agua de hidratación por agar agar. La cantidad de agar agar está pendiente de confirmación.",
+            "«Huevo con azúcar se mezcla antes para retardar la coagulación».",
+            "Temperatura anotada: 84 °C."
+          ]
+        },
+        {
+          "titulo": "Mousse de chocolate negro",
+          "fuente": "Página 2 del PDF escaneado (página impresa 22).",
+          "ingredientes": [
+            { "item": "Crema inglesa base", "cantidad": "170 g" },
+            { "item": "Chocolate negro 70 %", "cantidad": "60 g" },
+            { "item": "Crema semi montada", "cantidad": "150 g" }
+          ],
+          "procedimiento": [
+            "Batir la crema a semi montada.",
+            "Verter la crema inglesa caliente al chocolate fundido; con mezquino mezclar con movimientos circulares y luego con mini pimer.",
+            "Añadir la crema semi montada en forma envolvente; llevar a una manga para dosificar."
+          ],
+          "notas": [
+            "El montaje en el vaso, de abajo hacia arriba, es: mousse de chocolate negro, mousse de chocolate de leche y mousse de chocolate blanco.",
+            "Junto a la crema semi montada: «33 a 35 % de grasa»."
+          ]
+        },
+        {
+          "titulo": "Mousse de chocolate de leche",
+          "fuente": "Página 3 del PDF escaneado (página impresa 23).",
+          "ingredientes": [
+            { "item": "Crema inglesa base", "cantidad": "180 g" },
+            { "item": "Chocolate leche 40 %", "cantidad": "60 g" },
+            { "item": "Crema semi montada", "cantidad": "150 g" }
+          ],
+          "procedimiento": [
+            "Batir la crema a semi montada.",
+            "Verter la crema inglesa caliente al chocolate fundido; con mezquino mezclar con movimientos circulares y luego con mini pimer.",
+            "Añadir la crema semi montada en forma envolvente; llevar a una manga para dosificar."
+          ],
+          "notas": []
+        },
+        {
+          "titulo": "Mousse de chocolate blanco",
+          "fuente": "Página 4 del PDF escaneado (página impresa 24).",
+          "ingredientes": [
+            { "item": "Crema inglesa base", "cantidad": "180 g" },
+            { "item": "Chocolate blanco 35 %", "cantidad": "60 g" },
+            { "item": "Crema semi montada", "cantidad": "150 g" }
+          ],
+          "procedimiento": [
+            "Batir la crema a semi montada.",
+            "Verter la crema inglesa caliente al chocolate fundido; con mezquino mezclar con movimientos circulares y luego con mini pimer.",
+            "Añadir la crema semi montada en forma envolvente; llevar a una manga para dosificar."
+          ],
+          "notas": []
+        },
+        {
+          "titulo": "Crujiente de praliné",
+          "fuente": "Página 5 del PDF escaneado (página impresa 25).",
+          "ingredientes": [
+            { "item": "Praliné de avellana al 50 %", "cantidad": "84 g" },
+            { "item": "Chocolate leche 40 %", "cantidad": "21 g" },
+            { "item": "Manteca de cacao", "cantidad": "17 g" },
+            { "item": "Eclats d'or (barquillo triturado)", "cantidad": "42 g" }
+          ],
+          "procedimiento": [
+            "Derretir el chocolate por un lado y la manteca de cacao por el otro, y luego mezclar.",
+            "Añadir el praliné y el eclat d'or. Trabajar a 26 °C.",
+            "Extender muy fino (1 mm) entre dos papeles guitarra o mantequilla y cortar círculos que quepan en el vaso (3 por vaso). Extender el restante a 8 mm; enfriar y cortar cuadros que luego espolvoreamos con cacao para la decoración final."
+          ],
+          "notas": []
+        }
+      ],
+      "alternativas": [
+        {
+          "titulo": "Frutos secos garapiñados para praliné",
+          "descripcion": "Receta alternativa manuscrita en la parte superior de la página 5, para preparar el praliné a partir de frutos secos.",
+          "ingredientes": [
+            { "item": "Frutos secos", "cantidad": "200 g" },
+            { "item": "Azúcar", "cantidad": "200 g" },
+            { "item": "Agua", "cantidad": "40 g" }
+          ],
+          "procedimiento": [
+            "Tostar los frutos secos en horno a 180 °C durante 8 minutos.",
+            "Preparar un almíbar con el azúcar y el agua hasta llegar a 110 °C.",
+            "Garapiñar el fruto seco."
+          ],
+          "notas": []
+        }
+      ]
+    },
+    {
+      "slug": "vaso-tiramisu",
+      "titulo": "Vaso tiramisú",
+      "resumen": "Tiramisú en vaso con bizcocho melindros, crema de mascarpone montada con pasta bomba, almíbar de café con Amaretto y decoración de chocolate. Cuatro elaboraciones.",
+      "categoria": "Postres en vaso",
+      "clase": "Postres en vaso",
+      "dia": "13 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/vaso-tiramisu.jpg",
+      "fuente": "Páginas 6 a 9 del PDF escaneado (páginas impresas 26 a 29).",
+      "componentes": [
+        {
+          "titulo": "Bizcocho melindros (lengüitas)",
+          "fuente": "Página 6 del PDF escaneado (página impresa 26).",
+          "ingredientes": [
+            { "item": "Clara", "cantidad": "30 g" },
+            { "item": "Yema", "cantidad": "20 g" },
+            { "item": "Azúcar", "cantidad": "30 g" },
+            { "item": "Harina", "cantidad": "30 g" },
+            { "item": "Azúcar flor (deco)", "cantidad": "30 g" }
+          ],
+          "procedimiento": [
+            "Separar los huevos.",
+            "Montar las claras en la máquina con ayuda de un globo.",
+            "Añadir el azúcar, en 3 tandas, en forma de lluvia, hasta que la mezcla esté firme.",
+            "Añadir las yemas en tandas, manualmente con mezquino, de forma envolvente.",
+            "Terminar agregando la harina, en tandas, de forma envolvente.",
+            "Con boquilla N.° 10, manguear pequeños círculos que quepan dentro del vaso.",
+            "Espolvorear azúcar flor antes de hornear.",
+            "Horno a 160 °C por 8 minutos."
+          ],
+          "notas": [
+            "Junto al título: «lengüitas» (lectura confirmada).",
+            "Junto al montado de las claras: «duplicar tamaño».",
+            "«Masa de brazo de reina».",
+            "«Para torta 3 leches».",
+            "Corrección confirmada: la temperatura impresa de 180 °C se ajusta a 160 °C («bizcochos 160»)."
+          ]
+        },
+        {
+          "titulo": "Crema de mascarpone (con pasta bomba)",
+          "fuente": "Página 7 del PDF escaneado (página impresa 27).",
+          "ingredientes": [
+            { "item": "Azúcar", "cantidad": "40 g" },
+            { "item": "Agua", "cantidad": "13 g" },
+            { "item": "Yema", "cantidad": "33 g" },
+            { "item": "Mascarpone", "cantidad": "167 g" }
+          ],
+          "procedimiento": [
+            "Poner en una olla el agua y el azúcar a hervir.",
+            "Por otro lado, en la máquina batir las yemas con un globo.",
+            "Calentar el mascarpone para poder pomarlo.",
+            "Reducir la velocidad de las yemas, agregar el almíbar en forma de hilo y batir.",
+            "Añadir la pasta bomba al mascarpone de a poco con ayuda del mezquino y luego batir hasta que quede completamente homogénea."
+          ],
+          "notas": [
+            "Junto al título: «yemas batidas con almíbar».",
+            "«El almíbar baja la carga bacteriana».",
+            "«No busca color, solo disolver»."
+          ]
+        },
+        {
+          "titulo": "Almíbar de café",
+          "fuente": "Página 8 del PDF escaneado (página impresa 28).",
+          "ingredientes": [
+            { "item": "Azúcar", "cantidad": "40 g" },
+            { "item": "Agua", "cantidad": "40 g" },
+            { "item": "Café instantáneo disuelto", "cantidad": "80 g" },
+            { "item": "Amaretto", "cantidad": "3 g" }
+          ],
+          "procedimiento": [
+            "Hervir el agua con el azúcar hasta que el azúcar desaparezca.",
+            "Enfriar y añadir el café y el Amaretto."
+          ],
+          "notas": []
+        },
+        {
+          "titulo": "Decoración de chocolate",
+          "fuente": "Página 9 del PDF escaneado (página impresa 29).",
+          "ingredientes": [
+            { "item": "Chocolate blanco", "cantidad": "100 g" },
+            { "item": "Cacao en polvo", "cantidad": "50 g" }
+          ],
+          "procedimiento": [],
+          "procedimientoNota": "No indicado en el documento original.",
+          "notas": []
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "vaso-cheesecake",
+      "titulo": "Vaso cheesecake",
+      "resumen": "Cheesecake en vaso: mousse de queso sobre un núcleo helado de frutos rojos, con base de sablée bretón y mix de frutos rojos frescos. Cuatro elaboraciones.",
+      "categoria": "Postres en vaso",
+      "clase": "Postres en vaso",
+      "dia": "13 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/vaso-cheesecake.jpg",
+      "fuente": "Páginas 10 a 13 del PDF escaneado (páginas impresas 30 a 33).",
+      "componentes": [
+        {
+          "titulo": "Mousse de queso",
+          "fuente": "Página 10 del PDF escaneado (página impresa 30).",
+          "ingredientes": [
+            { "item": "Leche", "cantidad": "42 g" },
+            { "item": "Azúcar", "cantidad": "28 g" },
+            { "item": "Yema", "cantidad": "13 g" },
+            { "item": "Gelatina en polvo", "cantidad": "2 g" },
+            { "item": "Agua para hidratar", "cantidad": "10 g" },
+            { "item": "Queso philadelphia", "cantidad": "84 g" },
+            { "item": "Crema semi montada", "cantidad": "84 g" }
+          ],
+          "procedimiento": [
+            "Crema inglesa invertida: primero hervir la leche con el azúcar.",
+            "Llevar la leche a las yemas, en tandas, revolviendo con el batidor manual.",
+            "Con un colador, llevar a una olla nuevamente y cocinar hasta que la mezcla llegue a los 84 °C.",
+            "Añadir fuera de fuego la gelatina y luego el queso; revolver y luego triturar con la mini pimer.",
+            "Añadir la crema semi montada a 24 °C.",
+            "Con ayuda de una manga, dosificar en los vasos arriba del núcleo de frutos rojos."
+          ],
+          "notas": [
+            "Junto al queso: «pomar el queso»."
+          ]
+        },
+        {
+          "titulo": "Núcleo de frutos rojos",
+          "fuente": "Página 11 del PDF escaneado (página impresa 31).",
+          "ingredientes": [
+            { "item": "Pulpa de frutos rojos", "cantidad": "100 g" }
+          ],
+          "procedimiento": [
+            "Rellenar moldes de silicona de semiesferas y congelar."
+          ],
+          "notas": []
+        },
+        {
+          "titulo": "Sablée bretón",
+          "fuente": "Página 12 del PDF escaneado (página impresa 32).",
+          "ingredientes": [
+            { "item": "Mantequilla", "cantidad": "57 g" },
+            { "item": "Azúcar flor", "cantidad": "18 g" },
+            { "item": "Yema de huevo duro rallada", "cantidad": "2 g" },
+            { "item": "Harina", "cantidad": "52 g" },
+            { "item": "Chuño", "cantidad": "10 g" },
+            { "item": "Sal", "cantidad": "1,5 g" }
+          ],
+          "procedimiento": [
+            "Juntar la mantequilla con el azúcar flor y cremar en la máquina con la pala.",
+            "Agregar, de a poco, las yemas junto a la sal.",
+            "Seguir con el chuño en tandas.",
+            "Continuar con la harina en tandas.",
+            "Mezclar hasta que quede homogénea; no trabajar en exceso.",
+            "Extender a 3 mm de grosor entre hojas guitarra o papel mantequilla.",
+            "Cortar con corta pastas círculos adecuados al vaso y congelar nuevamente.",
+            "Hornear a 160 °C por 12 minutos."
+          ],
+          "notas": []
+        },
+        {
+          "titulo": "Mix de frutos rojos frescos",
+          "fuente": "Página 13 del PDF escaneado (página impresa 33).",
+          "ingredientes": [
+            { "item": "Mix de frutos rojos", "cantidad": "50 g" },
+            { "item": "Absolut cristal", "cantidad": "Sin cantidad indicada" },
+            { "item": "Azúcar", "cantidad": "Sin cantidad indicada" }
+          ],
+          "procedimiento": [],
+          "procedimientoNota": "No indicado en el documento original.",
+          "notas": [
+            "Las cantidades de Absolut cristal y azúcar se mantienen sin especificar; se usan solo para espolvorear."
+          ]
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "trufas-alcohol",
+      "titulo": "Trufas con alcohol",
+      "resumen": "Trufas de ganache de chocolate negro y de leche con brandy, boleadas y bañadas en chocolate templado y cacao. Rinde 30 unidades.",
+      "categoria": "Chocolatería",
+      "clase": "Chocolatería básica",
+      "dia": "14 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/trufas-alcohol.jpg",
+      "fuente": "Página 14 del PDF escaneado (página impresa 34).",
+      "componentes": [
+        {
+          "titulo": "Trufas con alcohol (30 unidades)",
+          "fuente": "Página 14 del PDF escaneado (página impresa 34).",
+          "ingredientes": [
+            { "item": "Chocolate negro 64 %", "cantidad": "200 g" },
+            { "item": "Chocolate leche 40 %", "cantidad": "90 g" },
+            { "item": "Crema", "cantidad": "200 g" },
+            { "item": "Brandy", "cantidad": "10 g" },
+            { "item": "Mantequilla", "cantidad": "30 g" },
+            { "item": "Chocolate leche 40 % (para cubrir)", "cantidad": "200 g" }
+          ],
+          "procedimiento": [
+            "Fundir el chocolate a 40 °C.",
+            "Calentar la crema hasta 40 °C o hasta que aparezcan las primeras burbujas.",
+            "Añadir, en 3 veces, la crema al chocolate e ir emulsionando con ayuda del mezquino.",
+            "Pomar la mantequilla.",
+            "Añadirla a la mezcla con ayuda de un mezquino y la batidora de inmersión.",
+            "Añadir el alcohol y terminar de emulsionar con la batidora de inmersión.",
+            "Dejar enfriar la ganache en una bandeja, con film a contacto, hasta un mínimo de 18 °C – 15 °C.",
+            "Poner en una manga y, con boquilla lisa, dividir la ganache en montoncitos iguales sobre una bandeja fría con silpat.",
+            "Enfriar nuevamente hasta que tenga buena textura.",
+            "Templar el chocolate de leche.",
+            "Sacar bolitas de ganache, con guantes formarlas como bolita lisa y pasar por chocolate previamente templado y, antes de que cristalice, poner en cacao en polvo para cubrir correctamente."
+          ],
+          "notas": [
+            "La segunda porción de chocolate de leche (200 g) es «para cubrir».",
+            "Junto al paso 1: «no pasarse de 45 °C».",
+            "Paso 2, aclaración confirmada: detener al alcanzar 40 °C o al aparecer las primeras burbujas."
+          ]
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "roca-frutos-secos",
+      "titulo": "Roca con frutos secos",
+      "resumen": "Rocas de chocolate atemperado con almendra laminada, coco, pistacho y naranja confitada. Rinde 25 unidades.",
+      "categoria": "Chocolatería",
+      "clase": "Chocolatería básica",
+      "dia": "14 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/roca-frutos-secos.jpg",
+      "fuente": "Página 15 del PDF escaneado (página impresa 35).",
+      "componentes": [
+        {
+          "titulo": "Roca con frutos secos (25 unidades)",
+          "fuente": "Página 15 del PDF escaneado (página impresa 35).",
+          "ingredientes": [
+            { "item": "Almendra laminada", "cantidad": "200 g" },
+            { "item": "Coco rallado tostado", "cantidad": "20 g" },
+            { "item": "Pistacho tostado", "cantidad": "30 g" },
+            { "item": "Naranja confitada en cubitos", "cantidad": "30 g" },
+            { "item": "Manteca de cacao", "cantidad": "5 g" },
+            { "item": "Chocolate atemperado (negro, leche o blanco)", "cantidad": "150 g" }
+          ],
+          "procedimiento": [
+            "En una sartén, tostar el coco rallado.",
+            "Tostar los pistachos en horno a 150 °C por 5 minutos.",
+            "Tostar las almendras laminadas a 180 °C por 8 minutos.",
+            "Juntar los naranjitos con la manteca de cacao (45 °C) y dejar que cristalice.",
+            "Mezclar todos los ingredientes y luego juntar con el chocolate atemperado.",
+            "Hacer montoncitos sobre un silpat y dejar enfriar."
+          ],
+          "notas": []
+        }
+      ],
+      "alternativas": []
+    },
+    {
+      "slug": "mendiants",
+      "titulo": "Mendiants",
+      "resumen": "Monedas de chocolate templado coronadas con coco, cranberries, almendras, pistachos y nueces. Un clásico de la chocolatería.",
+      "categoria": "Chocolatería",
+      "clase": "Chocolatería básica",
+      "dia": "14 de julio de 2026",
+      "bonus": false,
+      "imagen": "assets/img/recetas/mendiants.jpg",
+      "fuente": "Página 16 del PDF escaneado (página impresa 36).",
+      "componentes": [
+        {
+          "titulo": "Mendiants",
+          "fuente": "Página 16 del PDF escaneado (página impresa 36).",
+          "ingredientes": [
+            { "item": "Chocolate templado (negro, leche o blanco)", "cantidad": "150 g" },
+            { "item": "Láminas de coco", "cantidad": "20 g" },
+            { "item": "Cranberries", "cantidad": "20 g" },
+            { "item": "Almendras", "cantidad": "20 g" },
+            { "item": "Pistachos", "cantidad": "20 g" },
+            { "item": "Nueces", "cantidad": "20 g" }
+          ],
+          "procedimiento": [
+            "Templar el chocolate con las temperaturas respectivas, según el tipo de chocolate.",
+            "En un silpat, papel mantequilla o papel guitarra, con ayuda de una manga, hacer unas monedas.",
+            "Añadir los frutos secos, de preferencia por encima."
+          ],
+          "notas": []
         }
       ],
       "alternativas": []
